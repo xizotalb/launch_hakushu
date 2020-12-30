@@ -1,0 +1,16 @@
+.c-paragraph{
+    @include font($size:1.7rem);
+    color: white;
+    line-height: 2.65;
+    letter-spacing: .69px;
+    @include breakpoint(tab){
+        font-size: 1.4rem;
+        letter-spacing: 2.8px;
+        line-height: 2.2;
+    }
+    @include breakpoint(sp){
+        font-size: 1.3rem;
+        letter-spacing: 0.26px;
+        line-height: 2.15;
+    }
+}

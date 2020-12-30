@@ -1,0 +1,58 @@
+.c-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    pointer-events: none;
+    &__content {
+        padding: 28px 70px 0;
+        @include breakpoint(tab) {
+            padding: 14px 45px;
+        }
+        @include breakpoint(sp) {
+            padding: 3px 30px;
+        }
+    }
+    &__logo {
+        height: 90px;
+        transform: translateY(17px);
+        pointer-events: all;
+        @media only screen and (max-width: $ipadPro) and (orientation: landscape) {
+            height: 65px;
+        }
+        @include breakpoint(tab) {
+        }
+        @include breakpoint(sp) {
+            transform: translateY(14px);
+        }
+        img {
+            height: 100%;
+            width: auto;
+            max-width: 100%;
+        }
+    }
+    &__gnav {
+        pointer-events: all;
+        a {
+            text-transform: uppercase;
+            font-family: $font2;
+            font-size: 1.6rem;
+            @media only screen and (max-width: $ipadPro) and (orientation: landscape) {
+                font-size: 1.4rem;
+            }
+            @include breakpoint(tab) {
+                font-size: 1.4rem;
+            }
+            @include breakpoint(sp) {
+                font-size: 1.2rem;
+            }
+            &:not(:first-child) {
+                padding-left: 25px;
+                @include breakpoint(tab) {
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+}

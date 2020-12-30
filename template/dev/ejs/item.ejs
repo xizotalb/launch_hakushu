@@ -1,0 +1,119 @@
+<%- include('./inc/_header.ejs', {title:'Hakushu'})%>
+<main class="p-item">
+    <div class="p-item__content">
+        <div class="l-layout1">
+                <div class="l-layout1__left">
+                    <div class="c-slide">
+                        <div class="c-slide__item">
+                            <img src="./assets/img/photo@2x.jpg" alt="">
+                        </div>
+                        <div class="c-slide__item">
+                            <img src="./assets/img/photo@2x.jpg" alt="">
+                        </div>
+                        <div class="c-slide__item">
+                            <img src="./assets/img/photo@2x.jpg" alt="">
+                        </div>
+                    </div>
+                    <%- include("./inc/_sound.ejs") -%>
+                    <div class="c-slide__controller">
+                        <div class="c-slide__controller1 is-hide">
+                            <span></span>
+                        </div>
+                        <div class="c-slide__controller2 ">
+                            <span class="c-slide__current">1</span>/<span class="c-slide__totak">3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="l-layout1__right row">
+                    <div class="p-item__right">
+                        <div class="c-info">
+                            <h3 class="c-title text-animation">
+                                白州森香るハイボールを、<br>
+                                ご自宅でも。
+                            </h3>
+                            <span class="c-info__name">
+                                白州うすづくりタンブラー
+                            </span>
+                            <p class="c-info__price">
+                                ¥ 1,296 <span>(税込)</span>
+                            </p>
+                            <div class="c-info__variants">
+                                <div class="makeshop-option-wrap">
+                                    <p class="makeshop-option-label">color</p>
+                                    <label class="makeshop-option-select-wrap">
+                                        <select data-id="makeshop-item-option1" class="makeshop-option-select">
+                                            <option value="0"
+                                                class="makeshop-option-select-item makeshop-option-select-title">
+                                                --選択してください
+                                            </option>
+                                            <option value="1" class="makeshop-option-select-item" selected="">
+                                                black
+                                            </option>
+                                            <option value="2" class="makeshop-option-select-item">
+                                                white
+                                            </option>
+                                        </select>
+                                    </label>
+                                </div>
+                            </div>
+                            <a href="#" class="c-btn">ADD TO CART</a>
+                            <%- include("./inc/_scroll2.ejs") -%>
+                        </div>
+                        <div class="c-detail">
+                             <p class="c-detail__text">
+                                透き通るグリーンが印象的なグラスは、<br>
+                                緑豊かな白州の森をイメージしました。<br>
+                                薄くて口あたりがよく、ハイボールの爽快さを<br>
+                                いっそう際立たせます。<br>
+                             </p>
+                             <div class="c-detail__info">
+                                    <div class="c-detail__item">
+                                            <span>
+                                                原産国：
+                                            </span>
+                                            <p>
+                                                日本
+                                            </p>
+                                    </div>
+                                    <div class="c-detail__item">
+                                            <span>
+                                                素材：
+                                            </span>
+                                            <p>
+                                                クリスタルガラス
+                                            </p>
+                                    </div>
+                                    <div class="c-detail__item">
+                                            <span>
+                                                容量：
+                                            </span>
+                                            <p>
+                                                約255ml
+                                            </p>
+                                    </div>
+                                    <div class="c-detail__item">
+                                            <span>
+                                                製造元：
+                                            </span>
+                                            <p>
+                                                カガミクリスタル株式会社
+                                            </p>
+                                    </div>
+                             </div>
+                             <p class="c-detail__more">
+                                ガラス製造の特性上、外観の仕上がりやサイズ、形状などに若干の個体差が生じたり、やむを得ず <br>
+                                小さな気泡などの混入がございます。使用上問題はありません。<br>
+                                ガラスの特性により、若干白く曇っている場合がございますが、人体に影響を及ぼすものではござい<br>
+                                ません。洗浄することにより曇りは軽減されます。<br>
+                            </p>
+                            <div class="c-detail__img">
+                                <img src="./assets/img/detail@2x.png" alt="">
+                            </div>
+                            <a href="">Back to List</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</main>
+<%- include('./inc/_footer.ejs')%>

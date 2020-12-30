@@ -1,0 +1,30 @@
+//============================================
+// breakpoint
+//============================================
+@mixin breakpoint($point) {
+    @if $point == pro {
+        @media only screen and (max-width: $ipadPro) {
+            @content;
+        }
+    } @else if $point == proL {
+        @media only screen and (max-width: $ipadPro) and (orientation: landscape) {
+            @content;
+        }
+    } @else if $point == tab {
+        @media only screen and (max-width: $ipad) {
+            @content;
+        }
+    } @else if $point == tabL {
+        @media only screen and (max-width: $ipad) and (orientation: landscape) {
+            @content;
+        }
+    } @else if $point == sp {
+        @media only screen and (max-width: $sp) {
+            @content;
+        }
+    } @else if $point == ori {
+        @media only screen and (orientation: landscape) {
+            @content;
+        }
+    }
+}

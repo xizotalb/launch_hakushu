@@ -1,0 +1,25 @@
+.c-btn {
+    @include font($name: $font3, $size: 2rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: 1px solid transparent;
+    letter-spacing: 2.4px;
+    height: 60px;
+    width: 350px;
+    text-transform: uppercase;
+    @include breakpoint(proL) {
+        font-size: 1.6rem;
+        letter-spacing: 1.92px;
+        height: 60px;
+        width: 254px;
+    }
+    @include breakpoint(tab) {
+        font-size: 1.6rem;
+        letter-spacing: 1.92px;
+        height: 60px;
+        width: 254px;
+
+    }
+}

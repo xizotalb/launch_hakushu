@@ -1,0 +1,112 @@
+///*------------------------------------------------------------
+//Anchor position
+//------------------------------------------------------------*/
+//.u-anchor:before{
+//	content:"";
+//	margin-top: -100px;
+//	padding-top: 100px;
+//}
+
+//------------------------------------------------------------
+// margin
+//------------------------------------------------------------
+
+//------------------------------------------------------------
+// color
+//------------------------------------------------------------
+
+//------------------------------------------------------------
+// else
+//------------------------------------------------------------
+
+.u-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.u-a-center {
+    align-items: center;
+}
+.u-between {
+    justify-content: space-between;
+}
+.u-t-center {
+    text-align: center;
+}
+.u-center {
+    justify-content: center;
+}
+.u-fullheight {
+    height: 100vh;
+}
+.u-fullwidth {
+    width: 100vw;
+}
+
+.u-reverse {
+    flex-wrap: wrap-reverse;
+}
+.u-fade {
+    opacity: 0;
+    transition: opacity 800ms ease-in-out;
+}
+.u-delay-fade {
+    opacity: 0;
+    transition: opacity 800ms ease-in-out;
+}
+.u-delay-fade.u-delay-fade--show {
+    opacity: 1;
+}
+.u-fade.u-fade--show {
+    opacity: 1;
+}
+.u-fade2 {
+    opacity: 0;
+    transition: opacity 800ms ease-in-out;
+}
+
+.u-fade2.u-fade2--show {
+    opacity: 1;
+}
+
+.is-hide {
+    display: none;
+}
+
+.pc-only {
+    display: block;
+    @include breakpoint(pro) {
+        display: none;
+    }
+}
+
+.pro-only {
+    display: none;
+    @include breakpoint(pro) {
+        display: block;
+    }
+    @include breakpoint(tab) {
+        display: none;
+    }
+}
+.tab-only {
+    display: none;
+    @include breakpoint(tab) {
+        display: block;
+    }
+    @include breakpoint(sp) {
+        display: none;
+    }
+}
+.sp-only {
+    display: none;
+    @include breakpoint(sp) {
+        display: block;
+    }
+}
+
+.text-animation {
+    span {
+        opacity: 0;
+        transform: opacity 0.7s;
+    }
+}
