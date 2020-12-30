@@ -1,0 +1,204 @@
+/* Css for page item */
+.p-item{
+    color: #004229;
+    &__content{
+        .l-layout1{
+            &__left{
+                .c-slide{
+                    position: relative;
+                    .slick-arrow{
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        color: #004229;
+                        font-size: 30px;
+                        font-weight: normal;
+                        background: none;
+                        font-family: $font3;
+                        z-index: 2;
+                        cursor: pointer;
+                    }
+                    .slick-prev{
+                        bottom: 52px;
+                        right: 183px;
+                    }
+                    .slick-next {
+                        bottom: 52px;
+                        right: 65px;
+                    }
+                    .slick-dots{
+                        position: absolute;
+                        bottom: 50px;
+                        right: 100px;
+                        li{
+                            display: none;
+                        }
+                        .slick-active{
+                            display: inline-block;
+                            color: #004229;
+                            font-size: 30px;
+                            font-weight: normal;
+                            font-family: $font3;
+                        }
+                    }
+                    &__item{
+                        img {
+                            display: block;
+                            height: 100vh;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            &__right{
+                .p-item__right{
+                    .c-info{
+                        text-align: center;
+                        h3.c-title{
+                            font-size: 28px;
+                            font-family: $font1;
+                        }
+                        &__name{
+                            font-size: 18px;
+                            margin-top: 50px;
+                            display: block;
+                        }
+                        &__price{
+                            font-size: 22px;
+                        }
+                        &__variants{
+                            .makeshop-option-wrap{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-top: 50px;
+                            }
+                            .makeshop-option-label{
+                                font-size: 16px;
+                            }
+                            .makeshop-option-select-wrap{
+                                .makeshop-option-select{
+                                    padding: 0 10px;
+                                    font-size: 16px;
+                                    color: #004229;
+                                    font-family: $mainFonts;
+                                    text-align-last: center;
+                                }
+                            }
+                        }
+                        .c-btn{
+                            margin: 0 auto;
+                            border: 1px solid #004229;
+                            margin-top: 60px;
+                        }
+                    }
+                    .c-detail{
+                        &__text{
+                            font-size: 18px;
+                            max-width: 75%;
+                            margin: 0 auto;
+                            line-height: 2;
+                        }
+                        &__info{
+                            font-size: 14px;
+                            max-width: 75%;
+                            margin: 0 auto;
+                            margin-top: 80px;
+                            .c-detail__item{
+                                display: flex;
+                                align-items: center;
+                                margin-bottom: 20px;
+                            }
+                        }
+                        &__more{
+                            font-size: 13px;
+                            max-width: 75%;
+                            margin: 0 auto;
+                            margin-top: 50px;
+                        }
+                        &__img{
+                            max-width: 75%;
+                            margin: 0 auto;
+                            margin-top: 50px;
+                        }
+                        &__back-btn{
+                            max-width: 75%;
+                            margin: 0 auto;
+                            display: flex;
+                            align-items: center;
+                            margin-top: 50px;
+                            font-size: 19px;
+                            font-family: $font3;
+                            font-weight: normal;
+                            span{
+                                line-height: 1;
+                                font-size: 21px;
+                                margin-bottom: 4px;
+                                margin-right: 10px;
+                            }
+                        }
+                        &__footer{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            width: 90%;
+                            margin: 0 auto;
+                            margin-top: 50px;
+                            font-family: $font3;
+                            font-weight: normal;
+                            .p-breadcrumb{
+                                font-size: 16px;
+                                a{
+                                    margin-right: 30px;
+                                }
+                            }
+                            .p-copyright{
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                }
+                .c-scroll1{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    bottom: 0px;
+                    right: 15px;
+                    transform: none;
+                    left: auto;
+                    p {
+                        font-family: linotype-sabon, serif, sans-serif;
+                        font-weight: normal;
+                        font-size: 1.2rem;
+                        letter-spacing: 1.44px;
+                        margin-bottom: 40px;
+                        color: #004229;
+                        transform: rotate(90deg);
+                    }
+                    &__line{
+                        display: inline-block;
+                        height: 30px;
+                        width: 1px;
+                        background-color: #004229;
+                        text-align: center;
+                        position: relative;
+                        overflow: hidden;
+                        .c-scroll1__line span {
+                            position: absolute;
+                            display: block;
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            height: 0%;
+                            -webkit-animation: scroll-down 3s infinite;
+                            animation: scroll-down 3s infinite;
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
