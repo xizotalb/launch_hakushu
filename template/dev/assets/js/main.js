@@ -4,6 +4,23 @@ $('.c-top-loading').addClass("is-active")
 $(window).ready(() => {
     setFullHeight('u-fullheight')
     setFullWidth('u-fullwidth')
+    // $('.c-sound__')
+    $(".js-sound-icon").mouseover(function () { 
+        $('.c-sound__content').addClass("is-active")
+    });
+    $('.c-sound__content').mouseleave(function () { 
+        $(this).removeClass('is-active')
+    });
+
+    $('.js-slide1').slick({
+        arrows: false,
+        infinite: true,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed: 1000,
+    });
 
 });
 $(window).on('resize', function() {

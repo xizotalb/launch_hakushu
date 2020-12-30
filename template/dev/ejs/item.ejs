@@ -5,19 +5,28 @@
                 <div class="l-layout1__left">
                     <div class="c-slide">
                         <div class="c-slide__item">
-                            <img src="./assets/img/item/product1.jpg" alt="">
+                            <img src="./assets/img/photo@2x.jpg" alt="">
                         </div>
                         <div class="c-slide__item">
                             <img src="./assets/img/photo@2x.jpg" alt="">
                         </div>
                         <div class="c-slide__item">
-                            <img src="./assets/img/item/product1.jpg" alt="">
+                            <img src="./assets/img/photo@2x.jpg" alt="">
+                        </div>
+                    </div>
+                    <%- include("./inc/_sound.ejs") -%>
+                    <div class="c-slide__controller">
+                        <div class="c-slide__controller1 is-hide">
+                            <span></span>
+                        </div>
+                        <div class="c-slide__controller2 ">
+                            <span class="c-slide__current">1</span>/<span class="c-slide__totak">3</span>
                         </div>
                     </div>
                 </div>
                 <div class="l-layout1__right row">
-                    <div class="p-item__right" id="item">
-                        <div class="c-info vertical-scrolling">
+                    <div class="p-item__right">
+                        <div class="c-info">
                             <h3 class="c-title text-animation">
                                 白州森香るハイボールを、<br>
                                 ご自宅でも。
@@ -30,26 +39,27 @@
                             </p>
                             <div class="c-info__variants">
                                 <div class="makeshop-option-wrap">
-                                    <p class="makeshop-option-label">Color : </p>
+                                    <p class="makeshop-option-label">color</p>
                                     <label class="makeshop-option-select-wrap">
                                         <select data-id="makeshop-item-option1" class="makeshop-option-select">
-                                            <!-- <option value="0"
+                                            <option value="0"
                                                 class="makeshop-option-select-item makeshop-option-select-title">
                                                 --選択してください
-                                            </option> -->
-                                            <option value="0" class="makeshop-option-select-item" selected="">
-                                                Black
                                             </option>
-                                            <option value="1" class="makeshop-option-select-item">
-                                                White
+                                            <option value="1" class="makeshop-option-select-item" selected="">
+                                                black
+                                            </option>
+                                            <option value="2" class="makeshop-option-select-item">
+                                                white
                                             </option>
                                         </select>
                                     </label>
                                 </div>
                             </div>
                             <a href="#" class="c-btn">ADD TO CART</a>
+                            <%- include("./inc/_scroll2.ejs") -%>
                         </div>
-                        <div class="c-detail vertical-scrolling">
+                        <div class="c-detail">
                              <p class="c-detail__text">
                                 透き通るグリーンが印象的なグラスは、<br>
                                 緑豊かな白州の森をイメージしました。<br>
@@ -99,33 +109,11 @@
                             <div class="c-detail__img">
                                 <img src="./assets/img/detail@2x.png" alt="">
                             </div>
-                            <a class="c-detail__back-btn" href="#"> <span><</span> Back to List</a>
-
-                            <div class="c-detail__footer">
-                                <div class="p-breadcrumb">
-                                    <a href="#">Guide</a>
-                                    <a href="#">Privacy Policy</a>
-                                    <a href="#">Trade Law</a>
-                                    <a href="#">Contact</a>
-                                </div>
-                                <div class="p-copyright">
-                                    COPYRIGHT © SUNTORY HOLDINGS LIMITED.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="c-scroll1">
-                        <p>SCROLL</p>
-                        <div class="c-scroll1__line">
-                            <span></span>
+                            <a href="">Back to List</a>
                         </div>
                     </div>
                 </div>
         </div>
     </div>
 </main>
-<<<<<<< HEAD
-<%- include('./inc/_footer1.ejs')%>
-=======
-<%- include('./inc/_footer-item.ejs')%>
->>>>>>> 84eff5eb99d2cca43a60a54bc556c6a3dc5ea2c3
+<%- include('./inc/_footer.ejs')%>
