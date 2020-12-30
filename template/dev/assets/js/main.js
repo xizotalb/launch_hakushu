@@ -35,6 +35,7 @@ function setFullWidth(selector){
     let windowWidth = $(window).width();
     $(selector).outerWidth(windowWidth);
 }
+
 $('#fullpage').fullpage({
     sectionSelector: '.vertical-scrolling',
     anchors: ['1', '2', '3', '4', '5', '6', '7', '8','9'],

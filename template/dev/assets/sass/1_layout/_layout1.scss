@@ -1,6 +1,7 @@
 .l-layout1{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     &__left{
         width: 50%;
         @include breakpoint(pro){
