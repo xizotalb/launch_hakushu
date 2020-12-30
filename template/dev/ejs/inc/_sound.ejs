@@ -1,4 +1,8 @@
 <div class="c-sound">
+    <div class="c-sound__action">
+        <img class="c-sound__action__icon" src="./assets/img/icon/sound@2x.png" alt="">
+        <span class="c-paragraph">森の音</span>
+    </div>
     <div class="c-sound__content">
             <p class="c-paragraph">
                 森の音
@@ -7,37 +11,43 @@
                 <div class="c-sound__item is-on">
                     <img class="c-sound__item--on" src="./assets/img/icon/forest-on@2x.png" alt="">
                     <img class="c-sound__item--off" src="./assets/img/icon/forest-off@2x.png" alt="">
-                    <span class="c-sound__line"></span>
+                    <input type="range" id="volume" name="volume"
+         min="0" max="100" value="50" class="c-sound__volume">
                 </div>
                 <div class="c-sound__item is-on">
                     <img class="c-sound__item--on" src="./assets/img/icon/rain-on@2x.png" alt="">
                     <img class="c-sound__item--off" src="./assets/img/icon/rain-off@2x.png" alt="">
-                    <span class="c-sound__line"></span>
+                    <input type="range" id="volume" name="volume"
+                    min="0" max="100" value="50" class="c-sound__volume">
                 </div>
                 <div class="c-sound__item is-on">
                     <img class="c-sound__item--on" src="./assets/img/icon/night-on@2x.png" alt="">
                     <img class="c-sound__item--off" src="./assets/img/icon/night-off@2x.png" alt="">
-                    <span class="c-sound__line"></span>
+                    <input type="range" id="volume" name="volume"
+                    min="0" value="50" max="100" class="c-sound__volume">
                 </div>
                 <div class="c-sound__item is-on">
                     <img class="c-sound__item--on" src="./assets/img/icon/river-on@2x.png" alt="">
                     <img class="c-sound__item--off" src="./assets/img/icon/river-off@2x.png" alt="">
-                    <span class="c-sound__line"></span>
+                    <input type="range" id="volume" name="volume"
+                    min="0" value="50" max="100" class="c-sound__volume">
                 </div>
                 <div class="c-sound__item is-on">
                     <img class="c-sound__item--on" src="./assets/img/icon/forest-on@2x.png" alt="">
                     <img class="c-sound__item--off" src="./assets/img/icon/forest-off@2x.png" alt="">
-                    <span class="c-sound__line"></span>
+                    <input type="range" id="volume" name="volume"
+                    min="0" value="50" max="100" class="c-sound__volume">
                 </div>
                 <div class="c-sound__item is-on">
                     <img class="c-sound__item--on" src="./assets/img/icon/fire-on@2x.png" alt="">
                     <img class="c-sound__item--off" src="./assets/img/icon/fire-off@2x.png" alt="">
-                    <span class="c-sound__line"></span>
+                    <input type="range" id="volume" name="volume"
+                    min="0" value="50" max="100" class="c-sound__volume">
                 </div>
             </div>
-            <div class="c-sound__action is-on">
+            <div class="c-sound__handle is-on">
                 <p>SOUND</p>
-                <span class="c-sound__action--on">ON</span>/<span class="c-sound__action--off">OFF</span>
+                <span class="c-sound__handle--on">ON</span>/<span class="c-sound__handle--off">OFF</span>
             </div>
         </div>
         <div class="c-sound__close">

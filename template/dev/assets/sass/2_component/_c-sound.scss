@@ -1,0 +1,150 @@
+.c-sound {
+    position: absolute;
+    left: 50px;
+    bottom: 30px;
+    z-index: 100;
+    &__action {
+        display: flex;
+        align-items: center;
+        &__icon {
+            width: 20px;
+            height: auto;
+            max-height: 100%;
+            margin-right: 20px;
+            @include breakpoint(tab) {
+                margin-right: 12px;
+            }
+        }
+        span {
+            @include breakpoint(tab) {
+                font-size: 1.3rem;
+                letter-spacing: 0.26px;
+                line-height: 2.15;
+            }
+        }
+    }
+
+    &__content {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 154px;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        padding: 42px 0 35px;
+        .c-paragraph {
+            font-size: 1.7rem;
+            letter-spacing: 0.68px;
+            color: $mainColor;
+            text-align: center;
+            @include breakpoint(pro) {
+                font-size: 1.7rem;
+                letter-spacing: 0.68px;
+            }
+        }
+    }
+    &__type {
+    }
+    &__item {
+        width: 70px;
+        text-align: center;
+        img {
+            display: none;
+            width: auto;
+            height: 35px;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        &.is-on &--on {
+            display: block;
+        }
+        &.is-off &--off {
+            display: block;
+        }
+        input {
+            outline: 0;
+            border: 0;
+            border-radius: 500px;
+            width: 400px;
+            max-width: 100%;
+            margin: 24px 0 16px;
+            transition: box-shadow 0.2s ease-in-out;
+            // Chrome
+            @media screen and (-webkit-min-device-pixel-ratio: 0) {
+                & {
+                    overflow: hidden;
+                    height: 2px;
+                    -webkit-appearance: none;
+                    background-color: #ddd;
+                }
+                &::-webkit-slider-runnable-track {
+                    height: 2px;
+                    -webkit-appearance: none;
+                    color: #444;
+                    // margin-top: -1px;
+                    transition: box-shadow 0.2s ease-in-out;
+                    box-shadow: inset 0px 0px 0px .5px #fff ;
+                }
+                &::-webkit-slider-thumb {
+                    width: 0;
+                    -webkit-appearance: none;
+                    height: 0;
+                    cursor: pointer;
+                    // background: #fff;
+                    box-shadow: -320px 0 0px 320px $mainColor,
+                        inset 0 0 0 40px $mainColor;
+                }
+                &:active::-webkit-slider-thumb {
+                    background: #fff;
+                    box-shadow: -320px 0 0px 320px $mainColor,
+                        inset 0 0 0 3px $mainColor;
+                }
+            }
+            // Firefox
+            &::-moz-range-progress {
+                background-color: $mainColor;
+            }
+            &::-moz-range-track {
+                background-color: $mainColor;
+            }
+            // IE
+            &::-ms-fill-lower {
+                background-color: $mainColor;
+            }
+            &::-ms-fill-upper {
+                background-color: $mainColor;
+            }
+        }
+    }
+    &__close {
+        display: none;
+        .is-open {
+            @include breakpoint(tab) {
+                display: block;
+            }
+        }
+    }
+
+    &__handle {
+        font-size: 1.4rem;
+        font-family: $font3;
+        font-weight: normal;
+        letter-spacing: 0.56px;
+        text-align: center;
+        color: $mainColor;
+        p {
+            margin-bottom: 10px;
+        }
+        span {
+            display: inline-block;
+            margin-right: 10px;
+            &:last-child {
+                margin-left: 10px;
+            }
+        }
+    }
+}

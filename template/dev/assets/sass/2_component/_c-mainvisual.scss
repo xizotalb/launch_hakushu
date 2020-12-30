@@ -10,10 +10,36 @@
         height: 100%;
         object-fit: cover;
     }
-    &__bottom{
+    &__copyright{
+        color: #fff;
         position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
+        right: 50px;
+        bottom: 45px;
+        font-size: 1.1rem;
+        letter-spacing: .88px;
+        font-family: $font3;
+        font-weight: normal;
+
+        @include breakpoint(tab){
+            
+            bottom: 30px;
+            right: 30px;
+            opacity: 0;
+            transition: opacity .6s ease;
+            &.is-show{
+                opacity: 1;
+            }
+        }
+        @include breakpoint(sp){
+        font-size: 1rem;
+            letter-spacing: .6px;
+        }
+    }
+    .c-sound{
+        bottom: 43px;
+        @include breakpoint(tab){
+            left: 30px;
+            bottom: 28px;
+        }
     }
 }

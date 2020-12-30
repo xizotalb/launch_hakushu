@@ -3,6 +3,18 @@
         height: 100vh;
         @include center;
         position: relative;
+        &__img{
+            height: 140px;
+            @include breakpoint(tab){
+                height: 110px;
+            }
+            img{
+                height: 100%;
+                width: auto;
+                max-width: 100%;
+            }
+        }
+        
     }
     &2{
         @include center;
