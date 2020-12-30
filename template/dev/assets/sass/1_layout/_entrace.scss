@@ -1,16 +1,12 @@
 .p-entrace{
-     div[class^="p-entrace"]{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    margin-top: 100vh;
     &1{
         height: 100vh;
+        @include center;
+        position: relative;
     }
     &2{
+        @include center;
+
         height: 100vh;
         &__img{
             height: 140px;
@@ -26,13 +22,18 @@
         }
     }
     &3{
+        @include center;
+
         height: 100vh;
     }
     &4{
+        @include center;
+
         height: 100vh;
     }
     &__btn.c-btn2{
         color: #fff;
+        margin: 0 auto;
         // border-color: #fff;
     }
 }
